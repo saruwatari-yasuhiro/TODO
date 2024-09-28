@@ -1,0 +1,585 @@
+2024-06-02 16:10:04 Error: Testing LogError() basic function
+2024-06-02 16:10:04 Error: Testing with multi-line string
+2024-09-01 14:53:13 Error: [MissingActionException] Action NotesController::create() could not be found.
+Exception Attributes: array (
+  'controller' => 'NotesController',
+  'action' => 'create',
+)
+Request URL: /Notes/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(NotesController), Object(CakeRequest))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-09-16 08:01:47 Error: [MissingActionException] Action TasksController::vies() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'vies',
+)
+Request URL: /tasks/vies
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-09-16 08:01:51 Error: [MissingActionException] Action TasksController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'view',
+)
+Request URL: /tasks/view
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2024-09-16 08:05:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 08:06:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 08:08:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 08:12:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 08:12:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 08:17:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'file_path' cannot be null
+Request URL: /Tasks/create
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Task), Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(43): Model->save(Array)
+#6 [internal function]: TasksController->create()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 11:55:29 Error: Fatal Error (1): Trait 'Searchable' not found in [C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Model\Task.php, line 10]
+2024-09-16 11:55:29 Error: [FatalErrorException] Trait 'Searchable' not found
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Trait 'Searchab...', 'C:\\Users\\ysaruw...', 10)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Trait 'Searchab...', 'C:\\Users\\ysaruw...', 10, Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2024-09-16 11:57:55 Error: Fatal Error (1): Trait 'Searchable' not found in [C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Model\Task.php, line 10]
+2024-09-16 11:57:55 Error: [FatalErrorException] Trait 'Searchable' not found
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Trait 'Searchab...', 'C:\\Users\\ysaruw...', 10)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(1, 'Trait 'Searchab...', 'C:\\Users\\ysaruw...', 10, Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2024-09-16 12:00:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(24): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 12:01:36 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(24): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 12:04:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(24): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 12:05:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(24): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 12:10:02 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:12:09 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:12:35 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:13:07 Error: [MissingComponentException] Component class PrgComponentComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponentComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('PrgComponent', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:13:36 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:14:28 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:15:28 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:15:40 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:16:44 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:20:07 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:22:45 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:23:26 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:27:05 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:32:16 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:34:11 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:36:59 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:44:20 Error: Fatal Error (64): Constant expression contains invalid operations in [C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php, line 7]
+2024-09-16 12:44:20 Error: [FatalErrorException] Constant expression contains invalid operations
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Constant expres...', 'C:\\Users\\ysaruw...', 7)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Constant expres...', 'C:\\Users\\ysaruw...', 7, Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2024-09-16 12:57:41 Error: [Error] Call to a member function commonProcess() on null
+Request URL: /tasks/
+Stack Trace:
+#0 [internal function]: TasksController->index()
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:58:43 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 12:59:35 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 13:02:27 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 13:04:32 Error: [Error] Access to undeclared static property: AppController::$components
+Request URL: /tasks/
+Stack Trace:
+#0 [internal function]: TasksController->__construct(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(243): ReflectionClass->newInstance(Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#4 {main}
+2024-09-16 13:04:48 Error: [Error] Access to undeclared static property: AppController::$components
+Request URL: /tasks/
+Stack Trace:
+#0 [internal function]: TasksController->__construct(Object(CakeRequest), Object(CakeResponse))
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(243): ReflectionClass->newInstance(Object(CakeRequest), Object(CakeResponse))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#4 {main}
+2024-09-16 13:09:08 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 13:10:01 Error: [MissingComponentException] Component class PrgComponent could not be found.
+Exception Attributes: array (
+  'class' => 'PrgComponent',
+  'plugin' => false,
+)
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Prg', Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(649): ComponentCollection->init(Object(TasksController))
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-16 13:12:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 13:13:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 13:14:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 13:15:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-16 13:15:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
