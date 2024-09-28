@@ -5,20 +5,14 @@ class TasksController extends AppController
 {
     public $helpers = array('Html', 'Form', 'Flash', 'Js');
 
-    // 親クラスのコンポーネント設定を保持したい場合は次のように記述する
-    public function __construct($request = null, $response = null) {
-        parent::__construct($request, $response);
-        $this->components = array_merge($this->components, ['Search.Prg']);
-    }
-
     public function index()
     {
 
-        if (class_exists('Search.Controller.Component.PrgComponent')) {
-            $this->set('message', 'PrgComponent クラスが存在します');
-        } else {
-            $this->set('message', 'PrgComponent クラスが存在しません');
-        }
+        // if (class_exists('Search.Controller.Component.PrgComponent')) {
+        //     $this->set('message', 'PrgComponent クラスが存在します');
+        // } else {
+        //     $this->set('message', 'PrgComponent クラスが存在しません');
+        // }
 
 
         $options = array(
@@ -30,14 +24,13 @@ class TasksController extends AppController
         $this->render('index');
 
         // プラグインの設定
-        $this->Prg->commonProcess();
-        $conditions = $this->Task->parseCriteria($this->Prg->parsedParams());
-        $this->paginate = array(
-            'conditions' => $conditions,
-            'limit' => 10
-        );
-        $tasks = $this->paginate();
-        $this->set(compact('tasks'));
+        // $conditions = $this->Task->parseCriteria($this->Prg->parsedParams());
+        // $this->paginate = array(
+        //     'conditions' => array('Task.status' => 0) ,
+        //     'limit' => 10
+        // );
+        // $tasks = $this->paginate();
+        // $this->set(compact('tasks'));
     }
 
     public function done()

@@ -583,3 +583,105 @@ Stack Trace:
 #9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
 #10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2024-09-28 11:03:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-28 11:04:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-28 11:04:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-28 11:08:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-28 11:12:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'parseCriteria' at line 1
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('parseCriteria', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('parseCriteria', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(648): DboSource->fetchAll('parseCriteria', Array, Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(834): DboSource->query('parseCriteria', Array, Object(Task))
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(34): Model->__call('parseCriteria', Array)
+#6 [internal function]: TasksController->index()
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2024-09-28 11:13:50 Error: [Error] Call to a member function parsedParams() on null
+Request URL: /tasks/
+Stack Trace:
+#0 [internal function]: TasksController->index()
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2024-09-28 11:16:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'conditions' in 'where clause'
+Request URL: /tasks/
+Stack Trace:
+#0 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Task`.`...', Array)
+#2 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Task`.`...', Array, Array)
+#3 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Task`.`...', Array)
+#4 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Task), Array)
+#5 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Task), Array, Array)
+#8 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Controller\TasksController.php(32): Controller->paginate()
+#9 [internal function]: TasksController->index()
+#10 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(TasksController), Array)
+#11 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest))
+#13 C:\Users\ysaruwatari\Documents\workspace\cakephp-2.10.24\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
