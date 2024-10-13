@@ -15,22 +15,27 @@ class TasksController extends AppController
         // }
 
 
-        $options = array(
-            'conditions' => array('Task.status' => 0)
-        );
-        $tasks_data = $this->Task->find('all', $options);
-        $this->set('tasks_data', $tasks_data);
-
-        $this->render('index');
-
-        // プラグインの設定
-        // $conditions = $this->Task->parseCriteria($this->Prg->parsedParams());
-        // $this->paginate = array(
-        //     'conditions' => array('Task.status' => 0) ,
-        //     'limit' => 10
+        // $options = array(
+        //     'conditions' => array('Task.status' => 0)
         // );
-        // $tasks = $this->paginate();
-        // $this->set(compact('tasks'));
+        // $tasks_data = $this->Task->find('all', $options);
+        // $this->set('tasks_data', $tasks_data);
+
+        // $this->render('index');
+
+        // ページングの設定
+        $this->paginate = array(
+            'conditions' => array('Task.status' => 0),  // 条件を指定
+            'limit' => 5,  // 1ページあたりの件数
+            'order' => array('Task.created' => 'desc')  // 必要に応じて並び順を指定
+        );
+
+        // ページングされたデータを取得
+        $tasks_data = $this->paginate('Task');
+        $this->set('tasks_data', $tasks_data);
+        
+        // ビューのレンダリング
+        $this->render('index');
     }
 
     public function done()

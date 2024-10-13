@@ -1,11 +1,18 @@
 <!-- app/View/Tasks/index.ctp -->
-<!-- <?php
-        Cache::write('test_key', 'This is a test value.');
-        echo Cache::read('test_key');
-        ?> -->
 <?php echo $this->Html->link('新規タスク', '/Tasks/create'); ?>
 <h3><?php echo count($tasks_data); ?>件のタスクが未完了です</h3>
 
 <?php foreach ($tasks_data as $row) : ?>
     <?php echo $this->element('task', array('task' => $row)) ?>
 <?php endforeach; ?>
+
+
+<!-- ページネーションリンクの追加 -->
+
+<div class="pagination">
+    <?php
+    echo $this->Paginator->prev('« 前へ', array(), null, array('class' => 'disabled'));
+    echo $this->Paginator->numbers(array('separator' => ' | '));
+    echo $this->Paginator->next('次へ »', array(), null, array('class' => 'disabled'));
+    ?>
+</div>
