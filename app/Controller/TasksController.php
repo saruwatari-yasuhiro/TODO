@@ -115,20 +115,20 @@ class TasksController extends AppController
 
         // フォームが送信された場合は更新にトライ
         if ($this->request->is('post')) {
-
-            if (!empty($this->request->data['Task']) && $this->request->data['Task']['action'] === 'delete') {
-                // 削除処理を呼び出す
+            if ($this->request->data['Task']['action'] === 'delete') {
+                // 削除処理
                 return $this->delete($id);
-            }
-
-            $data = array(
-                'id' => $id,
-                'name' => $this->request->data['Task']['name'],
-                'body' => $this->request->data['Task']['body']
-            );
-            if ($this->Task->save($data)) {
-                $this->Session->setFlash('更新しました');
-                $this->redirect('/Tasks/index');
+            } else {
+                // 更新処理
+                $data = array(
+                    'id' => $id,
+                    'name' => $this->request->data['Task']['name'],
+                    'body' => $this->request->data['Task']['body']
+                );
+                if ($this->Task->save($data)) {
+                    $this->Session->setFlash('更新しました');
+                    $this->redirect('/Tasks/index');
+                }
             }
         } else {
             // POSTされていない場合は初期データをフォームにセット
