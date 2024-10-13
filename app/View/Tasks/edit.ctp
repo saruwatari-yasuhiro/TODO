@@ -1,8 +1,29 @@
 <!-- app/View/Tasks/edit.ctp -->
-<?php echo $this->Form->create('Task',array('type' => 'post')); ?>
+<?php echo $this->Form->create('Task', array('type' => 'post', 'id' => 'TaskEditForm')); ?>
 <!-- まとめて表示を行う例 -->
+<div class="input text required">
+    <label for="TaskName">タイトル</label>
+    <?php echo $this->Form->input('Task.name', array('type' => 'text', 'value' => $task['Task']['name'], 'required' => true)); ?>
+</div>
+<div class="input textarea required">
+    <label for="TaskBody">詳細</label>
+    <?php echo $this->Form->input('Task.body', array('type' => 'textarea', 'value' => $task['Task']['body'], 'required' => true)); ?>
+</div>
+
+<!-- 保存ボタン -->
+<div class="submit">
+    <?php echo $this->Form->button('保存', array('type' => 'submit')); ?>
+</div>
+
+<!-- 隠しフィールドを使って削除ボタンを追加 -->
 <?php
-echo $this->Form->input('Task.name',array('label' => 'タイトル'));
-echo $this->Form->input('Task.body',array('label' => '詳細'));
-echo $this->Form->end('保存');
+echo $this->Form->input('action', array('type' => 'hidden', 'value' => 'delete'));
+echo $this->Form->input('id', array('type' => 'hidden', 'value' => $task['Task']['id']));
+echo $this->Form->button('削除', array(
+    'type' => 'submit',
+    'onclick' => "return confirm('本当に削除しますか？');",
+    'class' => 'btn btn-danger'
+));
 ?>
+
+<?php echo $this->Form->end(); ?>

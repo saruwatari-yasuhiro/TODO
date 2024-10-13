@@ -115,6 +115,12 @@ class TasksController extends AppController
 
         // フォームが送信された場合は更新にトライ
         if ($this->request->is('post')) {
+
+            if (!empty($this->request->data['Task']) && $this->request->data['Task']['action'] === 'delete') {
+                // 削除処理を呼び出す
+                return $this->delete($id);
+            }
+
             $data = array(
                 'id' => $id,
                 'name' => $this->request->data['Task']['name'],
@@ -128,5 +134,28 @@ class TasksController extends AppController
             // POSTされていない場合は初期データをフォームにセット
             $this->request->data = $task;
         }
+
+        // タスクデータをビューに渡す
+        $this->set(compact('task'));
+    }
+
+    /**
+     * 削除機能
+     * @return void
+     */
+    public function delete($id = null)
+    {
+        $this->Task->id = $id;
+        if (!$this->Task->exists()) {
+            throw new NotFoundException(__('無効なタスクです。'));
+        }
+
+        if ($this->Task->delete()) {
+            $this->Session->setFlash(__('タスクが削除されました。'));
+        } else {
+            $this->Session->setFlash(__('タスクの削除に失敗しました。'));
+        }
+
+        return $this->redirect(array('action' => 'index')); // 削除後はインデックスにリダイレクト
     }
 }
