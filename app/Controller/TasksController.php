@@ -33,7 +33,10 @@ class TasksController extends AppController
         // ページングされたデータを取得
         $tasks_data = $this->paginate('Task');
         $this->set('tasks_data', $tasks_data);
-        
+        // 全体件数の取得
+        $total_count = $this->params['paging']['Task']['count'];
+        $this->set('total_count', $total_count);
+
         // ビューのレンダリング
         $this->render('index');
     }
