@@ -33,10 +33,17 @@
         '/Tasks/edit/' . $task['Task']['id'],
         array('class' => 'button left')
     ); ?>
-
+    <?php echo $this->Html->link(
+        '削除',
+        '/Tasks/delete/' . $task['Task']['id'],
+        array('class' => 'button center',
+        'onclick' => 'return confirm("本当に削除しますか？");'
+        )
+    ); ?>
     <?php echo $this->Html->link(
         'このタスクを完了する',
         '/Tasks/done/' . $task['Task']['id'],
         array('class' => 'button right')
     ); ?>
+
 </div>

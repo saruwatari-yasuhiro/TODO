@@ -34,31 +34,4 @@ class Task extends AppModel
         )
     );
 
-    // /**
-    //  * Task保存前にアップロードファイルを保存する
-    //  * 
-    //  * @return boolean
-    //  */
-    // public function beforeSave($options = array())
-    // {
-    //     // ファイルがアップロードされたかを確認
-    //     if (!empty($this->data['Task']['file']['name'])) {
-    //         $file = $this->data['Task']['file'];
-
-    //         // ファイル名を生成（タイムスタンプ + オリジナルファイル名）
-    //         $filename = time() . '_' . $file['name'];
-
-    //         // ファイル保存先のパスを設定
-    //         $uploadPath = WWW_ROOT . 'files' . DS . 'tasks' . DS;
-
-    //         // ファイルをサーバーに保存
-    //         if (move_uploaded_file($file['tmp_name'], $uploadPath . $filename)) {
-    //             // データベースに保存するためのファイルパスを設定
-    //             $this->data['Task']['file_path'] = 'files/tasks/' . $filename;
-    //         } else {
-    //             // アップロード失敗時
-    //             return false;
-    //         }
-    //     }
-    // }
 }

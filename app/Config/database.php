@@ -82,10 +82,10 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
+		'login' => 'root',
+		'password' => '',
 		'database' => 'test_my_app',
 		'prefix' => '',
-		'encoding' => 'utf8',
+		'encoding' => 'utf8'
 	);
 }
