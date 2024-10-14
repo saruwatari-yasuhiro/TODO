@@ -58,7 +58,7 @@ class TasksController extends AppController
             $this->Task->create();
 
             // フォームからファイルを取得
-            $file = isset($this->request->data['file']) ? $this->request->data['file'] : null;
+            $file = isset($this->request->data['Task']['file']) ? $this->request->data['Task']['file'] : null;
 
             if (!empty($file['name'])) {
                 $uploadPath = WWW_ROOT . 'files' . DS . 'tasks' . DS;
