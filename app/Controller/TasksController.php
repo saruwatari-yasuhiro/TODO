@@ -1,5 +1,4 @@
 <?php
-App::uses('PrgComponent', 'Search.Controller.Component');
 
 class TasksController extends AppController
 {
@@ -7,21 +6,6 @@ class TasksController extends AppController
 
     public function index()
     {
-
-        // if (class_exists('Search.Controller.Component.PrgComponent')) {
-        //     $this->set('message', 'PrgComponent クラスが存在します');
-        // } else {
-        //     $this->set('message', 'PrgComponent クラスが存在しません');
-        // }
-
-
-        // $options = array(
-        //     'conditions' => array('Task.status' => 0)
-        // );
-        // $tasks_data = $this->Task->find('all', $options);
-        // $this->set('tasks_data', $tasks_data);
-
-        // $this->render('index');
 
         // ページングの設定
         $this->paginate = array(

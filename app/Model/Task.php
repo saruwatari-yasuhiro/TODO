@@ -1,6 +1,5 @@
 <?php
 App::uses('AppModel', 'Model');
-App::uses('Searchable', 'Search.Model');
 
 class Task extends AppModel
 {

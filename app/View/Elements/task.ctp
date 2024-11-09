@@ -11,11 +11,11 @@
         <?php foreach ($task['Note'] as $note) : ?>
             <li><?php echo h($note['body']); ?></li>
         <?php endforeach; ?>
-        <li><?php echo $this->Html->link(
-                'コメントを追加',
-                '/Notes/create'
-            ); ?></li>
     </ul>
+    <?php echo $this->Html->link(
+            'コメントを追加',
+            array('controller' => 'Notes', 'action' => 'create', $task['Task']['id']) // task_id をURLに渡す
+        ); ?>
     </p>
     <!-- アップロードされたファイルが存在するか確認 -->
     <?php if (!empty($task['Task']['file_path'])) : ?>

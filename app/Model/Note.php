@@ -1,7 +1,8 @@
-<?php 
-class Note extends AppModel{
-    
-    public $belongsTo = array('Task');
+<?php
+App::uses('AppModel', 'Model');
 
+class Note extends AppModel
+{
+
+    public $belongsTo = array('Task');
 }
-?>

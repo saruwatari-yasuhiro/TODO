@@ -1,3 +1,4 @@
 app/tmp/cache/*
 app/webroot/files/tasks/*
 /vendors/
+app/tmp/logs/*
