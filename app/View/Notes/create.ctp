@@ -1,10 +1,14 @@
 <!-- app/View/Notes/create.ctp -->
-<form action="<?php echo $this->Html->url('/Notes/create'); ?>" method="POST">
-    <?php echo $this->Form->error('Notes.body'); ?>
+<?php echo $this->Form->create('Note', array('url' => array('action' => 'create'))); ?>
 
-    コメント<br />
-    <textarea name="body" cols="40" rows="8"></textarea>
+<?php echo $this->Form->input('body', array('type' => 'textarea', 'label' => 'コメント', 'cols' => 40, 'rows' => 8)); ?>
+<!-- エラー表示を個別に処理
+<?php
+$errors = $this->Form->error('body');
+if (!empty($errors)) {
+    echo $errors;
+}
+?> -->
 
-    <input type="submit" value="コメントを作成">
-    <?php echo $this->Form->hidden('task_id', array('value' => $taskId)); ?>
-</form>
+<?php echo $this->Form->hidden('task_id', array('value' => $taskId)); ?>
+<?php echo $this->Form->end('コメントを作成'); ?>

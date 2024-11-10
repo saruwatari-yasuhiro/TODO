@@ -10,7 +10,7 @@ class NotesController extends AppController
         if ($this->request->is('post')) {
 
             // $taskId が null の場合にエラーを表示してリダイレクト
-            $taskId = $this->request->data['task_id'];
+            $taskId = $this->request->data['Note']['task_id'];
             if (empty($taskId)) {
                 $this->Session->setFlash(__('タスクIDが指定されていません。'));
                 return $this->redirect('/Notes/index'); // リダイレクト先を指定
@@ -18,7 +18,7 @@ class NotesController extends AppController
 
             $this->Note->create();
             $data = array(
-                'body' => $this->request->data['body'],
+                'body' => $this->request->data['Note']['body'],
                 'task_id' => $taskId // task_id をデータに含める
             );
 

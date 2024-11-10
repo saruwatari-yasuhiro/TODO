@@ -6,12 +6,6 @@ class Task extends AppModel
     public $hasMany = array('Note');
 
     public $name = 'Task';
-    
-    public $filterArgs = array(
-        'name' => array('type' => 'value'),
-        'body' => array('type' => 'value'),
-        'status' => array('type' => 'value')
-    );
 
     public $validate = array(
         'name' => array(
