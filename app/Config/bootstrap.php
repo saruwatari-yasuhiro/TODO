@@ -67,10 +67,10 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); // Loads a single plugin named DebugKit
  */
 
-CakePlugin::loadAll();
-//CakePlugin::load('Search');
-// CakePlugin::load('DebugKit');
-// debug(CakePlugin::path('Migrations'));
+// CakePlugin::loadAll();
+// CakePlugin::load('Search');
+CakePlugin::load('DebugKit');
+CakePlugin::load('Migrations', array('bootstrap' => true));
 // CakePlugin::load('Migrations', array('bootstrap' => true));
 /**
  * To prefer app translation over plugin translation, you can set

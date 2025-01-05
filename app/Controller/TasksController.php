@@ -33,7 +33,8 @@ class TasksController extends AppController
         $this->Task->saveField('status', 1);
         $msg = sprintf('タスク %s を完了しました。', $id);
 
-        $this->flash($msg, '/Tasks/index');
+        $this->Session->setFlash($msg);
+        $this->redirect('/Tasks/index');
     }
 
     public function create()
