@@ -1,8 +1,11 @@
 <?php
 
+App::uses('FileUploadComponent', 'Controller/Component'); 
+
 class TasksController extends AppController
 {
     public $helpers = array('Html', 'Form', 'Flash', 'Js');
+    public $components = array('FileUpload');
 
     public function index()
     {
@@ -45,21 +48,15 @@ class TasksController extends AppController
             // フォームからファイルを取得
             $file = isset($this->request->data['Task']['file']) ? $this->request->data['Task']['file'] : null;
 
-            if (!empty($file['name'])) {
-                $uploadPath = WWW_ROOT . 'files' . DS . 'tasks' . DS;
-                $filename = time() . '_' . basename($file['name']);
-                $destination = $uploadPath . $filename;
+            // FileUploadコンポーネントを使用してファイルをアップロード
+            $filePath = $this->FileUpload->uploadFile($file);
 
-                // ファイルをアップロード
-                if (move_uploaded_file($file['tmp_name'], $destination)) {
-                    $this->request->data['Task']['file_path'] = 'files/tasks/' . $filename;
-                } else {
-                    $this->Session->setFlash(__('File upload failed.'));
-                    $this->render('create');
-                    return;
-                }
+            if ($filePath !== false) {
+                $this->request->data['Task']['file_path'] = $filePath;
             } else {
-                $this->request->data['Task']['file_path'] = null;
+                $this->Session->setFlash(__('File upload failed.'));
+                $this->render('create');
+                return;
             }
 
             $data = array(
